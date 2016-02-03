@@ -1,0 +1,59 @@
+﻿@model Entity.Entities.BankAccount
+@{
+    Layout = "~/Views/Shared/_Loginlayout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="page-header">
+        <h3 class="text-center">Welcome to Bitministry Bank</h3>
+    </div>
+    <div class="row">
+        <div role="form" class="col-md-offset-3">
+            <div class="col-md-8" style="border:double;border-color:darkgray">
+                <div class="text-center" style="border-bottom:inset;border-bottom-color:darkgray">
+                    <h3 style="font-size:x-large">Login here</h3>
+                </div>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group" style="margin-top:3%;">
+                    @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="clearfix"></div><br />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                        <h5 class="text-center">@ViewBag.forpas</h5>
+                    </div>
+                </div>
+                <div class="clearfix"></div><br />
+                <div class="form-group text-center">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Login" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-danger" style="margin-top:3%;">
+        <div class="panel-heading">  Important security information:</div>
+        <div class="panel-body col-lg-offset-2">
+            <ol>
+                <li>  Before logging in, please ensure that the URL address on the address bar.</li>
+                <li>  Never provide your User ID or password to any one on phone or in response to a mail.Report a suspicious mail.</li>
+                <li> Do not enter login or other sensitive information in any pop up window.</li>
+                <li>Verify the site's security certificate by clicking on the padlock icon of your internet browser.</li>
+            </ol>
+        </div>
+    </div>
+}
+
+

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Bitministry Bank</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        function preventback() {
+            window.history.forward();
+        }
+        setTimeout("preventback()", 0);
+        window.onload = function () {
+            null
+        };
+    </script>
+</head>
+<body>
+    <div class="page-header">
+        <h3 class="text-center">Welcome to Bitministry Bank</h3>
+
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class=" col-sm-offset-2">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("Bitministry Bank", "MyProfile", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("MyProfile View", "MyProfile", "Home")</li>
+                            <li>@Html.ActionLink("Deposite", "Deposite", "Home")</li>
+                            <li>@Html.ActionLink("Withdraw", "Withdraw", "Home")</li>
+                            <li>@Html.ActionLink("Transfer money", "Transfer", "Home")</li>
+                            <li>@Html.ActionLink("Get Statement", "Statement", "Home")</li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li>@Html.ActionLink("Logout", "Logout", "Login")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+        <hr />
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

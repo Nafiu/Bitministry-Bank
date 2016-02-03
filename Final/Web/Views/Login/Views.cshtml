@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Loginlayout.cshtml";
+}
+
+<script type="text/javascript">
+    function winclo() {
+        sessionStorage.clear();
+        window.close();
+    }
+</script>
+
+<div class="row">
+    <div class="col-lg-offset-3">
+        <div class="col-lg-8 text-center" style="margin-top:15%;">
+            <h3>Thanks to Using Bitministry Bank</h3>
+            <input type="button" onclick="winclo();return false;" value="Close" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+

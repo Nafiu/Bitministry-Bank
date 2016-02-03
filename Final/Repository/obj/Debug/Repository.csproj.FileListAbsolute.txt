@@ -1,0 +1,40 @@
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\BankDatabase.mdf
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\BankDatabase_log.ldf
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Repository.dll
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Repository.pdb
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Database.dll
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Entity.dll
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\EntityFramework.dll
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Database.pdb
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\Entity.pdb
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\bin\Debug\EntityFramework.xml
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\obj\Debug\Repository.dll
+c:\users\nafiu\documents\visual studio 2015\Projects\Final\Repository\obj\Debug\Repository.pdb
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\BankDatabase.mdf
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\BankDatabase_log.ldf
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Repository.dll.config
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Repository.dll
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Repository.pdb
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Database.dll
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Entity.dll
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\EntityFramework.dll
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Database.pdb
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\Entity.pdb
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\bin\Debug\EntityFramework.xml
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\obj\Debug\Repository.dll
+\\NAFIU\Users\Nafiu\Documents\Visual Studio 2015\Projects\Final\Repository\obj\Debug\Repository.pdb
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\obj\Debug\Repository.dll
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\obj\Debug\Repository.pdb
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\BankDatabase.mdf
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\BankDatabase_log.ldf
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Repository.dll
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Repository.pdb
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Database.dll
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Entity.dll
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\EntityFramework.dll
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Database.pdb
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\Entity.pdb
+C:\Users\Nafiu\Documents\Visual Studio 2015\Projects\Unit Testing\Final\Repository\bin\Debug\EntityFramework.xml

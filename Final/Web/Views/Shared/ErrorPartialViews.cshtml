@@ -1,0 +1,39 @@
+﻿
+<html>
+<head>
+    <title></title>
+    <style>
+        html, body, .container-table {
+            height: 100%;
+        }
+
+        .container-table {
+            display: table;
+        }
+
+        .vertical-center-row {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="container container-table">
+            <div class="row vertical-center-row">
+
+                <!--Transaction sucess-->
+                <div class="panel panel-warning">
+                    <div class="panel-heading text-center">
+                        <h3>@ViewBag.headi</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4>@ViewBag.transfer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

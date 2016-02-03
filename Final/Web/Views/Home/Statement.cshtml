@@ -1,0 +1,125 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Entity.Entities.Transactionsdetail>
+
+@using (Html.BeginForm("Statement", "Home", FormMethod.Get))
+{
+    <div class="row">
+        <div class="form-group" role="form">
+            <div class="col-sm-offset-1">
+                <div class="form-inline col-sm-5">
+                    @Html.Label("From Date", new { @class = "control-label" })
+                    @Html.Editor("fromd", new { htmlAttributes = new { @id = "fromdate", @class = "form-control" } })
+                    @Html.Display("Choose From date", new { @id = 's', @class = "text-danger" })
+                </div>
+                <div class="form-inline col-sm-5">
+                    @Html.Label("To Date", new { @class = "control-label" })
+                    @Html.Editor("tod", new { htmlAttributes = new { @id = "todate", @class = "form-control" } })
+                    @Html.Display("Choose To date", new { @id = 'o', @class = "text-danger" })
+                </div>
+                <div class="form-inline col-sm-1">
+                    <input type="submit" onclick="return Empty()" class="btn btn-primary" value="Get Statement" />
+                </div>
+            </div>
+        </div>
+    </div>
+if (Model.Count != 0)
+    {
+        <div class="col-lg-offset-1 col-lg-10" style="border:thin;border-color:aqua;margin-top:5%;">
+            <div>
+                <h4>USER NAME @HttpContext.Current.User.Identity.Name<span class="pull-right"> Transaction details for @ViewBag.fd to @ViewBag.td</span></h4><p id="demo"></p>
+            </div>
+            <table class="table table-hover">
+                <tr style="background-color:beige">
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Tousername)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Types)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().datetimes)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().credit)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().debit)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Balance)
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tousername)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Types)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.datetimes)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.credit)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.debit)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Balance)
+                        </td>
+                    </tr>
+                }
+            </table>
+            <div class="text-center">
+                @Html.PagedListPager(Model, page => Url.Action("Statement", "Home", new
+           {
+               page,
+               fromd = Request.QueryString["fromd"],
+               tod = Request.QueryString["tod"]
+           }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded })
+            </div>
+
+        </div>
+    }
+    <div class="row">
+        <div class="text-center text-danger">
+            <h3> @ViewBag.er</h3>
+            <h3>@ViewBag.dat</h3>
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script type="text/javascript">
+                    $(function () {
+                        $('#fromdate').datetimepicker({
+                            format: 'DD-MM-YYYY'
+                        });
+                    });
+                    $(function () {
+                        $('#todate').datetimepicker({
+
+                            format: 'DD-MM-YYYY 23:59:59'
+                        });
+                    });
+                    function Empty() {
+                        var fd = document.getElementById("fromdate").value;
+                        var td = document.getElementById("todate").value;
+                        if (fd == "" || fd == null || td == "" || td == null) {
+                            alert("Choose date")
+                            return false
+                        }
+                        return true
+                    }
+    </script>
+
+}
+
+
+

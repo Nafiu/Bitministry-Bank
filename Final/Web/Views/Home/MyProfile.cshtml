@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Entity.Entities.BankAccount>
+<style>
+    th {
+        font-size: x-large;
+    }
+
+    td {
+        font-size: large;
+        text-transform: capitalize;
+    }
+</style>
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <div class="col-md-offset-1">
+            <div class="panel panel-info" style="border:double;border-color:darkgray">
+                <div class="panel-body">
+                    <div class="col-md-offset-1">
+                        <table class="table table-responsive">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Username)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AccountBalance)
+                                </th>
+                            </tr>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Username)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AccountBalance)
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
